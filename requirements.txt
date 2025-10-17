@@ -21,7 +21,6 @@ matplotlib==3.10.3
 narwhals==1.44.0
 numpy==1.26.3
 pandas==2.0.3
-pandas_ta==0.3.14b0
 pillow==11.2.1
 plotly==6.2.0
 prompt_toolkit==3.0.51
