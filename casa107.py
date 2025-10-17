@@ -204,19 +204,61 @@ with st.expander("📄 Incumplimiento en la Entrega de Protocolos Operacionales 
     
 # --- 10. INCUMPLIMIENTO AL ARTÍCULO 31 ---
 with st.expander("⚖️ Incumplimiento Sistemático al Marco Normativo (Artículo 31)"):
-    st.markdown("""
-    La Administración ha demostrado un incumplimiento sistemático y recurrente de las obligaciones establecidas en el Artículo 31 de la LEY QUE REGULA EL REGIMEN DE PROPIEDAD EN CONDOMINIO EN EL ESTADO DE MÉXICO, afectando la transparencia y la legalidad de los procedimientos:
+    st.markdown(
+        """
+        La Administración ha demostrado un **incumplimiento constante y repetido** de sus deberes legales, 
+        tal como lo exige el **Artículo 31 de la Ley de Propiedad en Condominio en el Estado de México**. 
+        
+        Esto afecta gravemente la **transparencia** y la **legalidad** con la que se maneja nuestra comunidad.
+        """
+    )
+    st.divider()
 
-    * **Artículo 31, Fracción III (Documentación):** La Administración no ha cumplido con el deber de **"Recabar y conservar los libros y la documentación relacionada con el condominio, los que en todo tiempo podrán ser consultados por los condóminos"**. Se registra una falta crónica de disponibilidad documental.
+    # --- Sección 1: Documentación ---
+    st.subheader("1. 📁 No entregan los documentos (Fracción III)")
 
-    * **Artículo 31, Fracción VII (Convocatorias):** Se ha incumplido la obligación de **"Convocar a las asambleas generales y extraordinarias, conforme a lo dispuesto en la presente Ley, en la escritura constitutiva y en el reglamento interior del condominio"**. Se han registrado múltiples ocasiones en las que las convocatorias no se emitieron dentro del plazo reglamentario.
+    st.markdown(
+        """
+        **La ley obliga a la Administración a:** * **Guardar y conservar toda la documentación** del condominio para que los propietarios puedan **consultarla en cualquier momento.**
+        
+        **El incumplimiento:** * La documentación **casi nunca está disponible**, lo que representa una **falta crónica** de transparencia y acceso a la información.
+        """
+    )
 
-    * **Artículo 31, Fracción V (Libro de Actas y Minutas):** La obligación de **"A través de su secretario, llevar un libro de actas en el que constarán los acuerdos tomados en las asambleas, [...] debiendo informarles por escrito a cada uno de los condóminos, las resoluciones que adopte la asamblea"** ha sido violada.
-        * **Actas Deficientes:** Existe un déficit de minutas formales. Las minutas existentes han sido incompletas o, en un caso documentado (Febrero 2025), sustituidas por **mensajes informales de WhatsApp** que contenían **errores aritméticos** en los cálculos de gastos.
-        * **Interpretación Errónea del Deber:** Se documenta que la Mesa Directiva ha aseverado de forma incorrecta que la obligación de conservar y registrar las actas recae en los asistentes de asamblea, lo cual es refutado categóricamente por el texto de la Fracción V que asigna esta responsabilidad a la Administración (a través de su secretario).
-                
-    Este cúmulo de incumplimientos normativos y la defensa de procedimientos irregulares por parte de la Mesa Directiva demandan una corrección inmediata.
-    """)
+    # --- Sección 2: Convocatorias ---
+    st.subheader("2. ⏱️ Las convocatorias son tardías (Fracción VII)")
+
+    st.markdown(
+        """
+        **La ley obliga a la Administración a:** * **Convocar a todas las asambleas** (generales y extraordinarias) **respetando estrictamente los plazos** y reglas que marca la ley y el reglamento interno.
+        
+        **El incumplimiento:** * Se han registrado múltiples ocasiones en las que las convocatorias se emitieron **fuera del tiempo reglamentario**, afectando la correcta organización de las reuniones y la participación.
+        """
+    )
+
+    # --- Sección 3: Actas y Minutas ---
+    st.subheader("3. ✍️ Las actas de asamblea son deficientes (Fracción V)")
+
+    st.markdown(
+        """
+        **La ley obliga a la Administración a:** * **Llevar un "Libro de Actas"** formal, registrar en él todos los acuerdos y **comunicarlos por escrito** a cada propietario.
+        
+        **El incumplimiento:**
+        
+        * **Actas Informales:** En lugar de actas formales, se han usado **mensajes informales de WhatsApp**. En el caso de febrero de 2025, el mensaje contenía además **errores de cálculo** en los gastos.
+        * **Deslindan su Responsabilidad:** La Mesa Directiva ha aseverado incorrectamente que la obligación de llevar y conservar las actas recae en los asistentes, cuando la ley es **categórica** al asignar esta tarea a la **Administración** (a través de su secretario).
+        """
+    )
+
+    st.divider()
+
+    # --- Conclusión ---
+    st.error(
+        """
+        **Conclusión:** Este cúmulo de violaciones a la ley y la defensa de procedimientos irregulares 
+        por parte de la Mesa Directiva exige una **corrección inmediata** para restablecer la legalidad en el condominio.
+        """
+    )
 
 # --- 11. DELEGACIÓN OPERATIVA ---
 with st.expander("🛡️ Incumplimiento de Funciones Estatutarias (Delegación Operativa)"):
