@@ -12,15 +12,12 @@ fonttools==4.58.4
 gitdb==4.0.12
 GitPython==3.1.44
 Jinja2==3.1.6
-jsonpointer==2.1
-jsonschema==4.24.0
-jsonschema-specifications==2025.4.1
 kiwisolver==1.4.8
 MarkupSafe==3.0.2
 matplotlib==3.10.3
 narwhals==1.44.0
 numpy==1.26.3
-pandas==2.0.3
+pandas==2.3.0
 pillow==11.2.1
 plotly==6.2.0
 prompt_toolkit==3.0.51
