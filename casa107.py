@@ -150,7 +150,7 @@ with st.expander("5. ⚠️ Discrepancias en Cobros, Mora y Conciliación de Sal
     * **Falta de Información Completa:** Se reitera la necesidad de obtener el **Estado Financiero Completo de Octubre 2024** y los Estados Financieros de Julio 2025 a la fecha para realizar la auditoría de estos periodos.
     """)
 
-    st.image("/Users/arturo/Desktop/Jardineria.jpeg", caption="Conceptos de Jardinería")
+    st.image("Jardineria.jpeg", caption="Conceptos de Jardinería")
 
     st.divider()
     st.markdown("""
@@ -164,9 +164,9 @@ with st.expander("5. ⚠️ Discrepancias en Cobros, Mora y Conciliación de Sal
     """)
     col1, col2 = st.columns(2)
     with col1:
-        st.image("/Users/arturo/Desktop/estado_nevior_1.jpeg", caption="Inconsistencia contable, el cobro por el concepto Seguridad es diferente a otros vecinos")
+        st.image("https://github.com/ParmaHouse107/Alert-app/blob/main/estado_neivor_1.jpeg", caption="Inconsistencia contable, el cobro por el concepto Seguridad es diferente a otros vecinos")
     with col2:
-        st.image("/Users/arturo/Desktop/estado_neivor_2.jpeg", caption="Inconsistencia contable, el cobro por el concepto Seguridad es diferente a otros vecinos y los cobros son diferentes")
+        st.image("https://github.com/ParmaHouse107/Alert-app/blob/main/estado_neivor_2.jpeg", caption="Inconsistencia contable, el cobro por el concepto Seguridad es diferente a otros vecinos y los cobros son diferentes")
 
 
 # --- 4. MANEJO FINANCIERO Y DIVULGACIÓN ---
