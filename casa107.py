@@ -14,7 +14,7 @@ st.set_page_config(
 st.title("🏡Análisis de Gestión y Finanzas")
 
 st.markdown("""
-Nos dirigimos a ustedes para compartir un **análisis** sobre la gestión de nuestra Mesa Directiva y Administración.
+Nos dirigimos a ustedes para compartir un **análisis** sobre la gestión dentro de la Privada Parma.
 
 La preocupación central, y la más grave, es la persistente **ausencia de la Asociación Civil (AC)** legalmente constituida para la Mesa Directiva. 
 """)
