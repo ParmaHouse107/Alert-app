@@ -166,9 +166,9 @@ with st.expander("5. ⚠️ Discrepancias en Cobros, Mora y Conciliación de Sal
     """)
     col1, col2 = st.columns(2)
     with col1:
-        st.image("https://github.com/ParmaHouse107/Alert-app/blob/main/estado_neivor_1.jpeg", caption="Inconsistencia contable, el cobro por el concepto Seguridad es diferente a otros vecinos")
+        st.image("estado_neivor_1.jpeg", caption="Inconsistencia contable, el cobro por el concepto Seguridad es diferente a otros vecinos")
     with col2:
-        st.image("https://github.com/ParmaHouse107/Alert-app/blob/main/estado_neivor_2.jpeg", caption="Inconsistencia contable, el cobro por el concepto Seguridad es diferente a otros vecinos y los cobros son diferentes")
+        st.image("estado_neivor_2.jpeg", caption="Inconsistencia contable, el cobro por el concepto Seguridad es diferente a otros vecinos y los cobros son diferentes")
 
 
 # --- 4. MANEJO FINANCIERO Y DIVULGACIÓN ---
