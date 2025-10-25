@@ -11,27 +11,29 @@ st.set_page_config(
 )
 
 # --- CABECERA Y SALUDO (TONO CONSERVADO SEGÚN SOLICITUD DEL USUARIO) ---
-st.title("🏡 Informe de Análisis de Gestión y Finanzas: Condominio Casa 107")
-st.markdown("### Síntesis Ejecutiva de Hallazgos y Solicitud de Auditoría Integral")
+st.title("🏡Análisis de Gestión y Finanzas")
 
-# TEXTO DE PRESENTACIÓN ACTUALIZADO CON TONO LIGERAMENTE SARCÁSTICO
 st.markdown("""
-Nos dirigimos a ustedes desde la **Casa 107** (esa entidad invisible que solo existe para preguntar, lo cual, por cierto, **no está incentivado** 🤫), para expresar nuestra **profunda observación** sobre la gestión de nuestra Mesa Directiva y Administración.
+Nos dirigimos a ustedes para compartir un **análisis** sobre la gestión de nuestra Mesa Directiva y Administración.
 
-La preocupación central, y la más grave, es la persistente **ausencia de la Asociación Civil (AC)** legalmente constituida para la Mesa Directiva. Como resultado, de acuerdo a las reglas del desarrollador **hemos perdido el Fondo Convive**, la cuenta bancaria de la Privada Parma, cuyo saldo ha crecido considerablemente, permanece bajo la **titularidad exclusiva de la Administración**—cuya gestión, cabe destacar, ha 'brillado' por su opacidad e irregularidades. **Esto no solo contraviene la sana administración, sino que nos expone a un riesgo inaceptable de pérdida total del capital.** 
-
-En la Casa 107 hemos realizado un análisis de los Estados Financieros y de comentarios recabados de varios vecinos (Pudieran ser de la Casa 108), con el propósito de presentar una **evaluación objetiva** de la gestión administrativa y financiera reciente, centrando en las **desviaciones legales y normativas** y las **inconsistencias operativas** en la Privada Parma.
+La preocupación central, y la más grave, es la persistente **ausencia de la Asociación Civil (AC)** legalmente constituida para la Mesa Directiva. 
+""")
+st.warning('Como resultado, de acuerdo a las reglas del desarrollador **hemos perdido el Fondo Convive**.', icon="🛑")
+            
+st.markdown("""La cuenta bancaria de la Privada Parma, cuyo saldo ha crecido considerablemente, permanece bajo la **titularidad exclusiva de la Administración**—cuya gestión, cabe destacar, ha 'brillado' por su opacidad e irregularidades. 
+""")
+st.warning('Esto nos expone a un riesgo inaceptable de pérdida total del capital.', icon="🛑")
+st.markdown("""Se realizó un análisis de los Estados Financieros y de comentarios recabados de varios vecinos, con el propósito de presentar una **evaluación objetiva** de la gestión administrativa y financiera reciente, centrando en las **desviaciones legales y normativas** y las **inconsistencias operativas** en la Privada Parma.
 """)
 
 st.markdown("""
-**Nota de Metodología:** La totalidad de los datos e información financiera citada en este informe ha sido extraída de la sección *Documentos → Estados Financieros* de la plataforma administrativa **Neivor** con los Estados Financieros de Enero 2024 a Junio 2025 que es lo que se cuenta. ***Para los que siempre piden evidencias*** 😉
-""")
+**Nota de Metodología:** La totalidad de los datos e información financiera citada en este informe ha sido extraída de la sección *Documentos → Estados Financieros* de la plataforma administrativa **Neivor** con los Estados Financieros de Enero 2024 a Junio 2025 que es lo que se cuenta.""")
 
 # --- 1. RESERVA PATRIMONIAL ---
 with st.expander("💰 Análisis de la Reserva Patrimonial y la Revaluación de la Cuota"):
     st.markdown(f"""
     * **Crecimiento de Capital:** Se documenta un crecimiento constante en el saldo de las cuentas, con una acumulación promedio mensual de aproximadamente **$35,000** desde octubre de 2024.
-    * Dado que este excedente representa un ahorro estimado de cerca de **$250 por propietario al mes**, se considera que el nivel actual de capitalización de reserva **obliga a una revisión del pago mensual de la cuota de mantenimiento**. Se exige la presentación formal de un plan de inversión o una justificación presupuestaria específica que demuestre la necesidad de mantener este superávit de capital no programado. 
+    * Dado que este excedente representa un ahorro estimado de cerca de **$280 por propietario al mes** tomando en cuenta la media de gastos fijos de Diciembre 2024 a Junio 2025, se considera que el nivel actual de capitalización de reserva **obliga a una revisión del pago mensual de la cuota de mantenimiento**. Se exige la presentación formal de un plan de inversión o una justificación presupuestaria específica que demuestre la necesidad de mantener este superávit de capital no programado. 
     
     **Adicionalmente, se requiere que la nueva estructura de cuotas asegure que el pago mensual no sea utilizado para cubrir los adeudos o impagos de aquellos vecinos que presenten morosidad ya que el capital excedente debe cubrir casos extraordinarios unicamente, manteniendo una estricta separación entre la tesorería operativa y la gestión de cobranza.**
     """)
@@ -105,8 +107,17 @@ with st.expander("💰 Análisis de la Reserva Patrimonial y la Revaluación de 
 # --- 2. ASOCIACIÓN CIVIL ---
 with st.expander("🐢 Revisión de Plazos y Presupuesto para la Asociación Civil (AC)"):
     st.markdown(f"""
-    * **Perdida Fondo Convive:** La demora de más de quince (15) meses por parte de la Mesa Directiva en la constitución de la Asociación Civil (AC), atribuida a normativas internas del desarrollador, resulta en la **pérdida de acceso al Fondo Convive**. Esta situación implica la lamentable renuncia a un recurso de 265,000.00 pesos destinado a mejoras en nuestra privada. Debemos estar felices de perder ese fondo. Lo mejor es seguir pagando de más cuotas mensuales y tener cuotas extraordinarias.
-    * **Discrepancia Presupuestaria:** El capital solicitado hasta el momento ha sido de **76,827.86 pesos** para la creación de la AC. Dado que los costos notariales promedio son de 15,000.00 pesos, se requiere la **desagregación detallada y justificación** de los más de **$60,000 adicionales** solicitados, así como el cronograma de trabajo para finalizar el trámite.
+    * **Perdida Fondo Convive:** La demora de más de quince (15) meses por parte de la Mesa Directiva en la constitución de la Asociación Civil (AC), atribuida a normativas internas del desarrollador, resulta en la **pérdida de acceso al Fondo Convive**. Debemos estar felices de perder ese fondo. Lo mejor es seguir pagando de más cuotas mensuales y tener cuotas extraordinarias.
+    """)
+    st.warning('Esta situación implica la lamentable renuncia a un recurso de 265,000.00 pesos destinado a mejoras en nuestra privada.', icon="⚠️")
+    st.markdown("""* **Discrepancia Presupuestaria:** El capital solicitado hasta el momento ha sido de **76,827.86 pesos** para la creación de la AC. Dado que los costos notariales promedio son de 15,000.00 pesos, se requiere la **desagregación detallada y justificación** de los más de **$60,000 adicionales** solicitados, así como el cronograma de trabajo para finalizar el trámite.
+    """)
+
+# --- 8. RIESGO FIDUCIARIO ---
+with st.expander("⚠️ Riesgo Fiduciario por Estructura de Titularidad de Cuentas"):
+    st.markdown("""
+    * **Titularidad a Nombre de Tercero:** Los fondos del condominio están, por decisión administrativa, a nombre de la **Administración** (un tercero).
+    * **Riesgo Declarado:** Un vecino documentó la declaración de La Mesa Directiva  sugiriendo que la Administración **"buscaría perjudicarnos"** en caso de conflicto. Mantener los activos bajo la titularidad de un tercero con un riesgo de conflicto declarado es una violación de la **sana gestión** y expone innecesariamente el patrimonio de los propietarios.
     """)
 
 # --- 3. CONTRATO DE ADMINISTRACIÓN ---
@@ -118,14 +129,53 @@ with st.expander("📜 Inconsistencia en la Justificación de la Continuidad del
     * **Asociación Civil (AC) Pendiente:** Minutos después, se modificó la justificación, indicando que la falta de constitución de la AC es el factor que impide la contratación de un nuevo proveedor.
 
     La contradicción entre ambas justificaciones, sumada al contrato no disponible y la demora de **más de quince meses** en la constitución de la AC, sugiere una **inmovilidad administrativa** en el proceso de evaluación y cambio.
+                
+    Un interesado ha intentado rastrear el contrato, en Ruba solo existe un contrato ya expirado con el cual la administración se intenta amparar.
+                
+    **¿Ustedes permitirían que el  prestador de servicios sea el único que posea el contrato? Bastante ventajoso de su parte.**
     """)
 
-# --- 4. MANEJO FINANCIERO Y DIVULGACIÓN ---
-with st.expander("💸 Inconsistencias Contables y Falta de Divulgación de Aumentos Tarifarios"):
+# --- 5. NUEVA SECCIÓN: COBROS, MORA E INCONSISTENCIAS ---
+with st.expander("5. ⚠️ Discrepancias en Cobros, Mora y Conciliación de Saldos en Plataforma Neivor y Estados financieros"):
+
     st.markdown("""
-    * **Justifiación del costo de servicio:** Durante el presente año, y a pesar de una notable deficiencia en la prestación de servicios, se ha autorizado un incremento superior al 78% en el costo de los mismos. El interrogante que se plantea es el siguiente: ¿Se ha observado una mejora en la calidad del servicio? Los puntos pendientes de cumplimiento solo comenzaron a ser atendidos tras la exigencia de convocar a una asamblea.
+    Se han detectado **inconsistencias  recurrentes** en la conciliación de los balances financieros. Por lo que se solicita una clarificación y justificación inmediata sobre los siguientes movimientos y saldos reportados en los Estados Financieros, que no son los únicos bajo escrutinio:
+    * **La cuenta de Banjio donde se tiene el capital de la Privada Parma no cumple con la Ley de Condominios**, se pide esclarecer este cambio de cuenta ya que la cuenta anterior en Inbursa si cumplía.
+    * **Traspaso por Cambio de Cuenta (Sep 2024):** En el reporte de gastos variables de Septiembre 2024, se registra el concepto **"Traspaso por cambio de cuenta"** por **$8,384.24** como un egreso. Se requiere aclarar esta anotación, ya que el proceso de cambio de cuenta (de Inbursa a Banregio) se gestionó realizando gastos desde la cuenta antigua (Inbursa) mientras los nuevos depósitos se dirigían a la cuenta nueva (Banregio). El concepto de "traspaso" por ese monto como **"gasto"** necesita ser justificado. Por cierto, el poco dinero sobrante de la cuenta anterior no fue usado completamente y 'maquillo' para que los Estados Financieros cuadren, les cobraron el Traspaso y se quedaron con su dinero 😂.
+
+    * **Conciliación de Saldos (Ago/Oct 2024 y Abril 2045):** Se han detectado discrepancias en la conciliación de saldos iniciales y finales reportados en los Estados Financieros de **Agosto a Septiembre 2024**, de **Septiembre a Octubre 2024** y de **Marzo a Abril 2025**. Los saldos iniciales de un mes no coinciden con los saldos finales del mes anterior, lo que indica un error fundamental en la cuadratura de los informes.
+
+    * **Doble Asiento de Jardinería:** Se exige la aclaración del concepto **"DEVOLUCION DE PAGO JARDINERA"** en Noviembre 2024, que figura simultáneamente como **ingreso y egreso** en el mismo periodo. Esta transacción coexiste con otro egreso bajo el concepto **"JARDINERIA"**, lo que complica la trazabilidad del gasto real y exige la presentación de documentación de respaldo.
+
+    * **Falta de Información Completa:** Se reitera la necesidad de obtener el **Estado Financiero Completo de Octubre 2024** y los Estados Financieros de Julio 2025 a la fecha para realizar la auditoría de estos periodos.
+    """)
+
+    st.image("/Users/arturo/Desktop/Jardineria.jpeg", caption="Conceptos de Jardinería")
+
+    st.divider()
+    st.markdown("""
+    Se han identificado graves inconsistencias entre los cargos reflejados en la plataforma de cobro **Neivor** y los Estados Financieros oficiales, lo que compromete la exactitud del saldo real del condominio.
+
+    * **Inconsistencia entre Neivor y Estados Financieros:** Se ha descubierto que los montos de cobro registrados en la aplicación **Neivor** no cuadran de forma consistente con los reportes de los **Estados Financieros**. Esta disparidad es crítica, ya que sugiere que el dinero recaudado a través del sistema de cobros podría no estar siendo contabilizado completamente en las cuentas formales.
+    """)
+    st.warning('Lo que representa un riesgo grave de **pérdida o desvío de capital.**', icon="⚠️")
+    st.markdown("""
+    * **Variabilidad Injustificada en Cuotas:** Los cobros por cada concepto en la aplicación Neivor varían sin justificación aparente mes a mes, y se han encontrado diferencias en las cuotas aplicadas entre vecinos para los mismos conceptos. Esta inconsistencia operativa viola el principio de equidad y estandarización en la recaudación de mantenimiento.
+    """)
+    col1, col2 = st.columns(2)
+    with col1:
+        st.image("/Users/arturo/Desktop/estado_nevior_1.jpeg", caption="Inconsistencia contable, el cobro por el concepto Seguridad es diferente a otros vecinos")
+    with col2:
+        st.image("/Users/arturo/Desktop/estado_neivor_2.jpeg", caption="Inconsistencia contable, el cobro por el concepto Seguridad es diferente a otros vecinos y los cobros son diferentes")
+
+
+# --- 4. MANEJO FINANCIERO Y DIVULGACIÓN ---
+with st.expander("💸 El dinero se va volando con decisiones poco claras"):
+    st.markdown("""
+    * **Justifiación del costo de servicio:** Durante el presente año, y a pesar de una notable deficiencia en la prestación de servicios, se ha autorizado un incremento superior al 78% en el costo de los mismos. El interrogante que se plantea es el siguiente: ¿Se ha observado una mejora en la calidad del servicio? Los puntos pendientes de cumplimiento solo comenzaron a ser atendidos tras la exigencia de convocar a una asamblea, que por cierto, tomó más de un mes la solicitud de asamblea.
     ### Evolución del Gasto de Administración (Incremento del 78%)
     """)
+
     
 # Datos de gastos de administración proporcionados por el usuario
     admon_data = {
@@ -159,38 +209,16 @@ with st.expander("💸 Inconsistencias Contables y Falta de Divulgación de Aume
 
     st.plotly_chart(fig_admon_expenses, use_container_width=True)
 
-    st.divider()
-
-    st.markdown("""
-    Se han detectado **inconsistencias  recurrentes** en la conciliación de los balances financieros. Por lo que se solicita una clarificación y justificación inmediata sobre los siguientes movimientos y saldos reportados en los Estados Financieros, que no son los únicos bajo escrutinio:
-
-    * **Traspaso por Cambio de Cuenta (Sep 2024):** En el reporte de gastos variables de Septiembre 2024, se registra el concepto **"Traspaso por cambio de cuenta"** por **$8,384.24** como un egreso. Se requiere aclarar esta anotación, ya que el proceso de cambio de cuenta (de Inbursa a Banregio) se gestionó realizando gastos desde la cuenta antigua (Inbursa) mientras los nuevos depósitos se dirigían a la cuenta nueva (Banregio). El concepto de "traspaso" por ese monto como **"gasto"** necesita ser justificado. Por cierto, el poco dinero sobrante de la cuenta anterior no fue usado completamente y 'maquillo' para que los Estados Financieros cuadren, les cobraron el Traspaso y se quedaron con su dinero 😂.
-
-    * **Conciliación de Saldos (Ago/Oct 2024 y Abril 2045):** Se han detectado discrepancias en la conciliación de saldos iniciales y finales reportados en los Estados Financieros de **Agosto a Septiembre 2024**, de **Septiembre a Octubre 2024** y de **Marzo a Abril 2025**. Los saldos iniciales de un mes no coinciden con los saldos finales del mes anterior, lo que indica un error fundamental en la cuadratura de los informes.
-
-    * **Doble Asiento de Jardinería:** Se exige la aclaración inmediata del concepto **"DEVOLUCION DE PAGO JARDINERA"**, que figura simultáneamente como **ingreso y egreso** en el mismo periodo. Esta transacción coexiste con otro egreso bajo el concepto **"JARDINERIA"**, lo que complica la trazabilidad del gasto real y exige la presentación de documentación de respaldo.
-
-    * **Falta de Información Completa:** Se reitera la necesidad de obtener el **Estado Financiero Completo de Octubre 2024** para realizar la auditoría de ese periodo.
-    """)
-
-
-
-
 # --- 7. SERVICIO DE PORTERÍA Y VIGILANCIA ---
 with st.expander("👥 Evaluación del Servicio de Portería"):
     st.markdown("""
     * **Incremento Tarifario No Vinculado al Servicio:** Se confirmó durante asamblea que el servicio de portería entregado fue  **incompleto** durante un periodo de "demo". Cinco meses después de empezar a prestar servicios y con meses de servicio incompletos, se aplicó un ajuste de precio por **"inflación"**. El incremento tarifario desvinculado de la calidad del servicio previamente reconocido como deficiente es una **decisión financiera que requiere ser justificada**.
     * **Vigilancia y Rondines:** La ausencia de la cuatrimoto que fue ofrecida desde un inicio fue justificada por la presencia de **"un vehículo de supervisión para pasar lista"**. Esta explicación sustituye la función de **vigilancia activa** (rondines) por la de **control horario**, lo cual no atiende la necesidad ni la intencion original.
-    * **Conflicto de intereses:** Algunos vecinos han observado un conflicto de intereses con la prestación de servicios de portería.
+    * **Conflicto de intereses:** Algunos vecinos han observado un conflicto de intereses con la prestación de servicios de portería y mantenimientos correctivos dentro de la Privada Parma.
     """)
 
 
-# --- 8. RIESGO FIDUCIARIO ---
-with st.expander("⚠️ Riesgo Fiduciario por Estructura de Titularidad de Cuentas"):
-    st.markdown("""
-    * **Titularidad a Nombre de Tercero:** Los fondos del condominio están, por decisión administrativa, a nombre de la **Administración** (un tercero).
-    * **Riesgo Declarado:** Un vecino documentó la declaración de La Mesa Directiva  sugiriendo que la Administración **"buscaría perjudicarnos"** en caso de conflicto. Mantener los activos bajo la titularidad de un tercero con un riesgo de conflicto declarado es una violación de la **sana gestión fiduciaria** y expone innecesariamente el patrimonio de los propietarios.
-    """)
+
 
 # --- 9. PROTOCOLOS OPERACIONALES ---
 with st.expander("📄 Incumplimiento en la Entrega de Protocolos Operacionales de Portería"):
@@ -203,7 +231,7 @@ with st.expander("📄 Incumplimiento en la Entrega de Protocolos Operacionales 
     """)
     
 # --- 10. INCUMPLIMIENTO AL ARTÍCULO 31 ---
-with st.expander("⚖️ Incumplimiento Sistemático al Marco Normativo (Artículo 31)"):
+with st.expander("⚖️ Incumplimiento Sistemático al Marco Legal (Artículo 31)"):
     st.markdown(
         """
         La Administración ha demostrado un **incumplimiento constante y repetido** de sus deberes legales, 
@@ -249,6 +277,8 @@ with st.expander("⚖️ Incumplimiento Sistemático al Marco Normativo (Artícu
         * **Deslindan su Responsabilidad:** La Mesa Directiva ha aseverado incorrectamente que la obligación de llevar y conservar las actas recae en los asistentes, cuando la ley es **categórica** al asignar esta tarea a la **Administración** (a través de su secretario).
         """
     )
+    st.warning('Desde el 13 de Septiembre se solicitaron las minutas faltantes a la Administración y Mesa Directiva, hasta el momento no han podido ser compartidas.', icon="⚠️")
+    st.warning('En su caso se puede llegar a desconocer los acuerdos de la Asambleas.', icon="⚠️")
 
     st.divider()
 
@@ -256,7 +286,7 @@ with st.expander("⚖️ Incumplimiento Sistemático al Marco Normativo (Artícu
     st.error(
         """
         **Conclusión:** Este cúmulo de violaciones a la ley y la defensa de procedimientos irregulares 
-        por parte de la Mesa Directiva exige una **corrección inmediata** para restablecer la legalidad en el condominio.
+        por parte de la Mesa Directiva y Administración exige una **corrección inmediata** para restablecer la legalidad en el condominio.
         """
     )
 
@@ -272,16 +302,13 @@ with st.expander("🛡️ Incumplimiento de Funciones Estatutarias (Delegación 
     **Nota: ¿Ustedes ya saben quiénes de la Privada Parma integran el Consejo Directivo? ¿La Administración o la Mesa Directiva informaron cuándo se formó?** 
     
     **💡 Hint**: Es el mismo que los manda a quejarse directamente con la seguridad, ¿Cuándo asumira su responsabilidad y transparencia de sus acciones?
-
-
-    **ADENDUM DE COMUNICACIÓN:** Se registra la advertencia emitida por un miembro de La Mesa Directiva: _"Solo te recuerdo que la manera que te comuniques conmigo definirá el tipo de respuesta que recibas"_. Declaración profesionalmente inapropiada.
     """)
 
 # --- CONCLUSIÓN ---
 st.markdown("---")
 st.error("### 🛑 Conclusión Formal y Solicitud de Auditoría Externa:")
 st.markdown("""
-La combinación de la **pérdida de capital (Fondo Convive)**, las **inconsistencias contables persistentes** (incluyendo las detalladas en la sección de *Aclaraciones Contables Específicas*), el **incremento de gasto no justificado**, el **riesgo fiduciario**, el **incumplimiento en la entrega de protocolos de seguridad** y la **violación de los deberes estatutarios** (Art. 31) configuran una situación de alto riesgo financiero y operacional que exige la acción inmediata.
+La combinación de la **pérdida de capital (Fondo Convive)**, las **inconsistencias contables persistentes** (incluyendo las detalladas en la sección de *Aclaraciones Contables Específicas*), el **incremento de gasto no justificado**, el **riesgo fiduciario**, el **incumplimiento en la entrega de protocolos de seguridad** y la **violación de los deberes legales** (Art. 31) configuran una situación de alto riesgo financiero y operacional que exige la acción inmediata.
 
 **Requerimientos Inmediatos:**
 1.  **Justificación documentada** de la inacción para ajustar la cuota de mantenimiento.
@@ -291,7 +318,6 @@ La combinación de la **pérdida de capital (Fondo Convive)**, las **inconsisten
 5.  **Entrega inmediata de los Protocolos Operacionales de Portería** (Pendiente por casi un año).
 6.  **Apego Inmediato al Artículo 31, Fracciones III, V y VII**, con la regularización de la documentación y minutas.
             
-            La gente no sabe leer y No damos explicaciones detalladas para evitar que la gente se agite
 """)
 
 
