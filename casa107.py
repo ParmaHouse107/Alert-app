@@ -33,8 +33,10 @@ st.markdown("""
 with st.expander("💰 Análisis de la Reserva Patrimonial y la Revaluación de la Cuota"):
     st.markdown(f"""
     * **Crecimiento de Capital:** Se documenta un crecimiento constante en el saldo de las cuentas, con una acumulación promedio mensual de aproximadamente **$35,000** desde octubre de 2024.
-    * Dado que este excedente representa un ahorro estimado de cerca de **$280 por propietario al mes** tomando en cuenta la media de gastos fijos de Diciembre 2024 a Junio 2025, se considera que el nivel actual de capitalización de reserva **obliga a una revisión del pago mensual de la cuota de mantenimiento**. Se exige la presentación formal de un plan de inversión o una justificación presupuestaria específica que demuestre la necesidad de mantener este superávit de capital no programado. 
-    
+    * Se considera que el nivel actual de capitalización de reserva **obliga a una revisión del pago mensual de la cuota de mantenimiento**. Se exige la presentación formal de un plan de inversión o una justificación presupuestaria específica que demuestre la necesidad de mantener este superávit de capital no programado. 
+    """)
+    st.warning('Este excedente representa un **ahorro estimado de $280** por propietario al mes tomando en cuenta la media de gastos fijos de Diciembre 2024 a Junio 2025,', icon="🛑")
+    st.markdown("""
     **Adicionalmente, se requiere que la nueva estructura de cuotas asegure que el pago mensual no sea utilizado para cubrir los adeudos o impagos de aquellos vecinos que presenten morosidad ya que el capital excedente debe cubrir casos extraordinarios unicamente, manteniendo una estricta separación entre la tesorería operativa y la gestión de cobranza.**
     """)
 
